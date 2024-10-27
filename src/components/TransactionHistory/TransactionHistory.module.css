@@ -1,0 +1,27 @@
+.table {
+  width: 600px;
+  border: 1px solid black;
+  border-spacing: 0;
+  text-align: center;
+  text-transform: capitalize;
+  border-collapse: collapse;
+}
+.thead tr.title {
+  background-color: black;
+}
+.thead {
+  color: #f0f8ff;
+  font-weight: 400;
+}
+tr:nth-child(odd) {
+  background-color: white;
+}
+tr:nth-child(even) {
+  background-color: #bab8b8;
+}
+.table th {
+  border: 1px solid black;
+}
+.table td {
+  border: 1px solid black;
+}

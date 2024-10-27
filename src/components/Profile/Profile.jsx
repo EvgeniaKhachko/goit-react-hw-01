@@ -22,7 +22,6 @@ const Profile = (userData) => {
         </li>
         <li>
           <span>Likes</span>
-
           <span className={s.follow_view_like}>{userData.stats.likes}</span>
         </li>
       </ul>
