@@ -2,10 +2,14 @@ import Profile from "./components/Profile/Profile";
 import "./index.css";
 import "modern-normalize";
 import userData from "./userData.json";
+import friends from "./friends.json";
+import FriendList from "./components/FriendList/FriendList";
+import transactions from "./transactions.json";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
 function App() {
   return (
-    <div>
+    <>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -13,7 +17,11 @@ function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-    </div>
+
+      <FriendList friends={friends} />
+
+      <TransactionHistory items={transactions} />
+    </>
   );
 }
 
